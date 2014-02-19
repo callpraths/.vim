@@ -8,7 +8,7 @@ set runtimepath+=~/.vim/bundle/vundle  " We assume vundle is available.
 call vundle#rc()
 
 " Original repos on github
-"
+Bundle 'tpope/vim-fugitive'
 " Reops on vim-scripts
 "
 " Non github repos
