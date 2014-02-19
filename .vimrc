@@ -16,6 +16,8 @@ call vundle#rc()
 " Local repos: Only use this for development.
 " /work/play/vim/BrainWaveMagic
 
+filetype plugin indent on  " Turn on full vim plugin magic.
+
 " }}} vim plugins.
 
 
@@ -53,11 +55,6 @@ set smartcase
 " My current mood is no folding ;) You may override by setting autocmds.
 set nofoldenable
 syntax on
-
-"This lets me use the .vim/ftplugin/ directory to do filetype specific stuff
-"Remember to copy from /usr/share/vim/vim72/ftplugins and change it.
-"My files are loaded first, so they will be overridden otherwise.
-filetype plugin indent on
 
 " Highlight long lines
 hi ColorColumn ctermbg=darkblue ctermfg=white
