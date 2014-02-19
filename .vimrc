@@ -1,5 +1,23 @@
-" Use the better VIM settings rather than Vi ones.
-set nocompatible
+set nocompatible  " Be iMproved.
+
+" vim-plugins. We use vundle to manage plugins. {{{
+
+filetype off  " required for vundle magic.
+
+set runtimepath+=~/.vim/bundle/vundle  " We assume vundle is available.
+call vundle#rc()
+
+" Original repos on github
+"
+" Reops on vim-scripts
+"
+" Non github repos
+"
+" Local repos: Only use this for development.
+" /work/play/vim/BrainWaveMagic
+
+" }}} vim plugins.
+
 
 " Set my leader keys before anything else.
 let mapleader = ','
