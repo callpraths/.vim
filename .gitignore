@@ -1,0 +1,5 @@
+bundle/**
+!bundle/vundle
+!bundle/vundle/**
+**/doc/tags
+.netrwhist
