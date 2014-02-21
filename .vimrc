@@ -85,9 +85,8 @@ set cc=+1
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>:echom 'Sourced $VIMRC'<cr>
 
-" Insert mode: Delete current line and return to insert mode.
-:inoremap <c-d> <esc>ddi
-
+" <c-w> is too hard!
+:nnoremap <leader>w <c-w>
 " Insert mode: Turn the current word uppercase.
 " This will attempt to leave the cursor beyond the word boundary.
 :inoremap <c-u> <esc>viwU<esc>ea
