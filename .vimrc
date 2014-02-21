@@ -43,7 +43,9 @@ set statusline+=\ \  " Separate rest from the fileinfo.
 set statusline+=%m  " Modified flag.
 set statusline+=%r  " Readonly flag.
 set statusline+=%=  " Rest appear on the right side of the statusline.
+set statusline+=b\:
 set statusline+=%n  " Buffer number.
+set statusline+=\ 
 set statusline+=%l/%L[%P]  " Current line / Total lines [percent].
 " }}}
 
