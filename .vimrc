@@ -9,6 +9,7 @@ call vundle#rc()
 
 " Original repos on github
 Bundle 'tpope/vim-fugitive'
+Bundle 'roman/golden-ratio'
 " Reops on vim-scripts
 "
 " Non github repos
