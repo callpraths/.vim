@@ -10,6 +10,8 @@ call vundle#rc()
 " Original repos on github
 Bundle 'tpope/vim-fugitive'
 Bundle 'roman/golden-ratio'
+Bundle 'fatih/vim-go'
+Bundle 'ctrlpvim/ctrlp.vim'
 " Reops on vim-scripts
 "
 " Non github repos
@@ -153,6 +155,24 @@ augroup filetype_programming
   autocmd FileType c,cpp,python,html setlocal textwidth=80
 augroup END
 " }}} programming.
+
+" FileType: go {{{
+augroup filetype_go
+  autocmd!
+
+  autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
+  
+  autocmd FileType go call RemoveTrailingSpaces()
+  autocmd FileType go nnoremap <buffer> <localleader>c I# <esc>
+  " vim-go key-maps
+  autocmd FileType go nnoremap <buffer> <localleader>gk :w<CR>:GoKeyify<CR> :w<CR>
+  autocmd FileType go nnoremap <buffer> <localleader>gm :w<CR>:GoMetaLinter<CR> :copen <CR>
+  autocmd FileType go nnoremap <buffer> <localleader>gd :GoDoc<CR>
+  autocmd FileType go nnoremap <buffer> <localleader>gf :GoFmt<CR>
+  autocmd FileType go nnoremap <buffer> <localleader>go :GoDefStack 1<CR>
+  
+augroup END
+" }}} go
 
 " FileType: cpp {{{
 augroup filetype_cpp
